@@ -1,0 +1,33 @@
+{% extends "/layouts/home_layout.html" %}
+
+{% block content %}
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container">
+            <h3>{{registered}}</h3>
+            <form action="/register" , method="post" class="form-group">
+                <ul>
+                    <label>Full name</label>
+                    <input name="name" type="text" class="form-control" />
+                    <label>Description</label>
+                    <input name="description" type="text" class="form-control" />
+                    <label>Password</label>
+                    <input name="password" type="text" class="form-control" />
+                    <label>Address</label>
+                    <input name="address" type="text" class="form-control" />
+                    <label>Email</label>
+                    <input name="email" type="text" class="form-control" />
+                    <label>Phone number</label>
+                    <input name="phone" type="text" class="form-control" />
+                    <label>Skills</label>
+                    <input name="skills" type="text" class="form-control" />
+                    <label>Interests</label>
+                    <input name="interests" type="text" class="form-control" />
+                    <input class="btn btn-primary btn-m rounded-pill mt-5" type="submit"/>
+                </ul>
+            </form>
+
+        </div>
+    </div>
+</header>
+{% endblock %}

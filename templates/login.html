@@ -1,0 +1,20 @@
+{% extends "/layouts/home_layout.html" %}
+
+{% block content %}
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container">
+            <form action="/login" , method="post" class="form-group">
+                <ul>
+                    <label>Email address</label>
+                    <input name="email" type="text" class="form-control" />
+                    <label>Password</label>
+                    <input name="password" type="password" class="form-control" />
+                    <input class="btn btn-primary btn-m rounded-pill mt-5" type="submit"/>
+                </ul>
+            </form>
+
+        </div>
+    </div>
+</header>
+{% endblock %}

@@ -1,0 +1,2 @@
+Register user, user logs in, displays profile page.
+
